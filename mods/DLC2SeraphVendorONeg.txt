@@ -1,0 +1,20 @@
+#<DLC2 Seraph Vendor Change>
+
+    #<UVHM Vendor Mod>
+
+        #<Ignore>
+
+            #set GD_Gladiolus_Itempools.SeraphCrystalVendor.ShopPool_SeraphGear_Iris_Revised BalancedItemsMirror ((bIsItemPool=False,ObjectName="Iris_Seraph_GrenadeMod_Crossfire_Balance",ObjectPath="GD_Iris_SeraphItems.Crossfire.Iris_Seraph_GrenadeMod_Crossfire_Balance"),(bIsItemPool=False,ObjectName="Iris_Seraph_GrenadeMod_MeteorShower_Balance",ObjectPath="GD_Iris_SeraphItems.MeteorShower.Iris_Seraph_GrenadeMod_MeteorShower_Balance"),(bIsItemPool=False,ObjectName="Iris_Seraph_Shield_Pun-chee_Balance",ObjectPath="GD_Iris_SeraphItems.Pun-chee.Iris_Seraph_Shield_Pun-chee_Balance"),(bIsItemPool=False,ObjectName="Iris_Seraph_Shield_Sponge_Balance",ObjectPath="GD_Iris_SeraphItems.Sponge.Iris_Seraph_Shield_Sponge_Balance"),(bIsItemPool=False,ObjectName="Iris_Seraph_GrenadeMod_Crossfire_Balance",ObjectPath="GD_Iris_SeraphItems.Crossfire.Iris_Seraph_GrenadeMod_Crossfire_Balance"))<off>
+
+        #</Ignore>
+
+        #<Vendor>
+
+            set GD_Gladiolus_Itempools.SeraphCrystalVendor.ShopPool_SeraphGear_Iris_Revised BalancedItems ((ItmPoolDefinition=None,InvBalanceDefinition=InventoryBalanceDefinition'GD_Iris_SeraphItems.Crossfire.Iris_Seraph_GrenadeMod_Crossfire_Balance',Probability=(BaseValueConstant=1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000),bDropOnDeath=True),(ItmPoolDefinition=None,InvBalanceDefinition=InventoryBalanceDefinition'GD_Iris_SeraphItems.MeteorShower.Iris_Seraph_GrenadeMod_MeteorShower_Balance',Probability=(BaseValueConstant=1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000),bDropOnDeath=True),(ItmPoolDefinition=None,InvBalanceDefinition=InventoryBalanceDefinition'GD_Iris_SeraphItems.Pun-chee.Iris_Seraph_Shield_Pun-chee_Balance',Probability=(BaseValueConstant=1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000),bDropOnDeath=True),(ItmPoolDefinition=None,InvBalanceDefinition=InventoryBalanceDefinition'GD_Iris_SeraphItems.Sponge.Iris_Seraph_Shield_Sponge_Balance',Probability=(BaseValueConstant=1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000),bDropOnDeath=True),(ItmPoolDefinition=None,InvBalanceDefinition=InventoryBalanceDefinition'GD_Iris_SeraphItems.ONegative.Iris_Seraph_GrenadeMod_ONegative_Balance',Probability=(BaseValueConstant=1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000),bDropOnDeath=True))
+
+        #</Vendor>
+
+    #</UVHM Vendor Mod>
+
+#</DLC2 Seraph Vendor Change>
+

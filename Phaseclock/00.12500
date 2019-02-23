@@ -1,0 +1,3 @@
+set GameInfo GameSpeed 00.12500
+set WorldInfo TimeDilation 00.12500
+set PlayerInput Bindings ((Name=LeftBracket,Command="exec Phaseclock/00.06250"),(Name=RightBracket,Command="exec Phaseclock/00.25000"))

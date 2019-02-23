@@ -1,0 +1,28 @@
+<BLCMM v="1">
+#<!!!You opened a file saved with BLCMM in FilterTool. Please update to BLCMM to properly open this file!!!>
+	<head>
+		<type name="BL2" offline="false"/>
+		<profiles>
+			<profile name="default" current="true"/>
+		</profiles>
+	</head>
+	<body>
+		<category name="Phaseclock">
+			<comment>By mopioid ( mopioid#0001 | twitch.tv/mopioid | @mopioid )</comment>
+			<comment>Provides key bindings to adjust the game speed on the fly.</comment>
+			<comment>The "[" key halves the game speed up to five times (1/32 speed), while "]" doubles it up to five times (32x speed).</comment>
+			<comment>Must execute in game (either alone, or as part of your merged BLCMM mods) before adjusting speed.</comment>
+			<category name="Code">
+				<code profiles="default">set GameInfo GameSpeed 01.00000</code>
+				<code profiles="default">set WorldInfo TimeDilation 01.00000</code>
+				<code profiles="default">set PlayerInput Bindings ((Name=LeftBracket,Command="exec Phaseclock/00.50000"),(Name=RightBracket,Command="exec Phaseclock/02.00000"))</code>
+			</category>
+		</category>
+	</body>
+</BLCMM>
+
+#Commands:
+set GameInfo GameSpeed 01.00000
+set WorldInfo TimeDilation 01.00000
+set PlayerInput Bindings ((Name=LeftBracket,Command="exec Phaseclock/00.50000"),(Name=RightBracket,Command="exec Phaseclock/02.00000"))
+
