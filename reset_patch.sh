@@ -1,23 +1,30 @@
 #!/bin/bash
 
-TERM_GREEN="\033[32m"
-TERM_RED="\033[31m"
-TERM_NORMAL="\033[0m"
+GREEN="\033[32m"
+RED="\033[31m"
+NORMAL="\033[0m"
 
-newPatch="backupPatch/Patch.txt.stable$1"
+correctDir="/Users/Seumas/Library/Application Support/Steam/SteamApps/common/Borderlands 2/Borderlands2.app/Contents/GameData/Binaries"
+
+if [ -d "${correctDir}" ]; then
+  cd "${correctDir}"
+else
+  exit 1
+fi
+
+newPatch="backupPatch/Patch.txt.stable"
 
 rm -i Patch.txt
 cp -vn ${newPatch} Patch.txt
-echo
-
+# don't put anything between these lines
 if [ $? -eq 0 ]; then
-  echo -e "${TERM_GREEN}--- patch reset (Patch.txt.stable$1) ---${TERM_NORMAL}"
+  echo -e "\n${GREEN}--- patch reset (Patch.txt.stable) ---${NORMAL}"
   md5 -r Patch.txt ${newPatch}
 else
-  echo -e "${TERM_RED}--- patch not reset ---${TERM_NORMAL}"
+  echo -e "\n${RED}--- patch not reset ---${NORMAL}"
 fi
 
 ls -l | grep Patch.txt
 echo
 
-unset newPatch
+unset correctDir newPatch GREEN RED NORMAL
